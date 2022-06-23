@@ -108,19 +108,19 @@ call s:HL('Todo'		  , s:palette.purple, s:palette.black , 'bold'	   )
 
 " LINES, COLUMNS
 call s:HL('LineNr'		  , s:palette.gray06, s:palette.black , 'bold'	   )
-call s:HL('CursorLine'	  , s:palette.white , s:palette.gray03, 'none'	   )
+call s:HL('CursorLine'	  , s:palette.white , s:palette.gray01, 'none'	   )
 call s:HL('CursorLineNr'  , s:palette.gray09, s:palette.black , 'bold'	   )
 
 call s:HL('ColorColumn'	  , s:palette.white , s:palette.gray03, 'none'	   )
 call s:HL('CursorColumn'  , s:palette.gray16, s:palette.gray03, 'none'	   )
 
 " VISUAL MODE
-call s:HL('Visual'		  , s:palette.green , s:palette.gray06, 'none'	   )
-call s:HL('VisualNOS'	  , s:palette.green , s:palette.gray06, 'none'	   )
+call s:HL('Visual'		  , s:palette.yellow, s:palette.black, 'none'	   )
+call s:HL('VisualNOS'	  , s:palette.yellow, s:palette.black, 'none'	   )
 
 " SEARCH
-call s:HL('Search'		  , s:palette.black , s:palette.yellow, 'bold'	   )
-call s:HL('IncSearch'	  , s:palette.yellow, s:palette.black , 'bold'	   )
+call s:HL('Search'		  , s:palette.black , s:palette.blue, 'italic'	   )
+call s:HL('IncSearch'	  , s:palette.blue, s:palette.black , 'italic'	   )
 
 " SPELLING
 call s:HL('SpellBad'	  , s:palette.white , s:palette.red	  , 'bold'	   )
@@ -138,30 +138,30 @@ call s:HL('ModeMsg'		  , s:palette.white	, s:palette.black , 'bold'	   )
 call s:HL('MoreMsg'		  , s:palette.white	, s:palette.black , 'bold'	   )
 
 " PREPROCESSOR DIRECTIVES
-call s:HL('Include'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Define'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Macro'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('PreCondit'	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('PreProc'		  , s:palette.white	, s:palette.black , 'bold'	   )
+call s:HL('Include'		  , s:palette.gray19	, s:palette.black , 'none'	   )
+call s:HL('Define'		  , s:palette.gray19	, s:palette.black , 'bold'	   )
+call s:HL('Macro'		  , s:palette.gray10	, s:palette.black , 'bold'	   )
+call s:HL('PreCondit'	  , s:palette.gray19	, s:palette.black , 'bold'	   )
+call s:HL('PreProc'		  , s:palette.gray19	, s:palette.black , 'bold'	   )
 
 " BINDINGS
-call s:HL('Identifier'	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Function'	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Keyword'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Operator'	  , s:palette.white	, s:palette.black , 'bold'	   )
+call s:HL('Identifier'	  , s:palette.white	, s:palette.black , 'none'	   )
+call s:HL('Function'	  , s:palette.white	, s:palette.black , 'none'	   )
+call s:HL('Keyword'		  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Operator'	  , s:palette.white	, s:palette.black , 'none'	   )
 
 " TYPES
-call s:HL('Type'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Typedef'	  	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('StorageClass'  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Structure'	  , s:palette.white	, s:palette.black , 'bold'	   )
+call s:HL('Type'		  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Typedef'	  	  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('StorageClass'  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Structure'	  , s:palette.white	, s:palette.black , 'italic'	   )
 
 " FLOW CONTROL
-call s:HL('Statement'	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Conditional'	  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Repeat'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Label'		  , s:palette.white	, s:palette.black , 'bold'	   )
-call s:HL('Exception'	  , s:palette.white	, s:palette.black , 'bold'	   )
+call s:HL('Statement'	  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Conditional'	  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Repeat'		  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Label'		  , s:palette.white	, s:palette.black , 'italic'	   )
+call s:HL('Exception'	  , s:palette.white	, s:palette.black , 'italic'	   )
 
 " MISC
 call s:HL('Normal'		  , s:palette.gray19, s:palette.black , 'none'	   )
@@ -179,10 +179,10 @@ call s:HL('Folded'		  , s:palette.gray06, s:palette.black , 'bold'	   )
 call s:HL('MatchParen'	  , s:palette.orange, s:palette.black , 'bold'	   )
 
 " POPUP
-call s:HL('Pmenu'		  , s:palette.white , s:palette.gray09, 'none'	   )
-call s:HL('PmenuSbar'	  , s:palette.black , s:palette.gray19, 'none'	   )
-call s:HL('PmenuSel'	  , s:palette.black , s:palette.gray19, 'none'	   )
-call s:HL('PmenuThumb'	  , s:palette.gray01, s:palette.gray09, 'none'	   )
+call s:HL('Pmenu'		  , s:palette.white , s:palette.gray02, 'none'	   )
+call s:HL('PmenuSbar'	  , s:palette.black , s:palette.gray22, 'none'	   )
+call s:HL('PmenuSel'	  , s:palette.black , s:palette.gray22, 'none'	   )
+call s:HL('PmenuThumb'	  , s:palette.gray01, s:palette.gray22, 'none'	   )
 
 " SPLITS
 call s:HL('VertSplit'	  , s:palette.gray19, s:palette.black , 'none'	   )
@@ -202,6 +202,11 @@ call s:HL('DiffAdd'		  , s:palette.white , s:palette.green , 'none'	   )
 call s:HL('DiffChange'	  , s:palette.white , s:palette.blue  , 'none'	   )
 call s:HL('DiffDelete'	  , s:palette.white , s:palette.red   , 'none'	   )
 call s:HL('DiffText'	  , s:palette.black , s:palette.yellow, 'none'	   )
+
+" Tabs
+call s:HL('TabLineFill'   , s:palette.gray19, s:palette.black, 'none' )
+call s:HL('TabLine'       , s:palette.gray20, s:palette.black, 'none' )
+call s:HL('TabLineSel'    , s:palette.blue,  s:palette.black, 'none' )
 
 
 " Links ------------------------------------------------------------------ {{{1
