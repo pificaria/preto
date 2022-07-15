@@ -101,7 +101,7 @@ call s:HL('String'		  , s:palette.gray12, s:palette.black , 'none'	   )
 call s:HL('SpecialChar'	  , s:palette.white , s:palette.black , 'none'	   )
 
 " COMMENTS
-call s:HL('Comment'		  , s:palette.gray05, s:palette.black , 'bold'	   )
+call s:HL('Comment'		  , s:palette.gray22, s:palette.black , 'none'	   )
 call s:HL('SpecialComment', s:palette.gray09, s:palette.black , 'bold'	   )
 call s:HL('Title'		  , s:palette.gray09, s:palette.black , 'bold'	   )
 call s:HL('Todo'		  , s:palette.purple, s:palette.black , 'bold'	   )
